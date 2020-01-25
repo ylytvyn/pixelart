@@ -1,0 +1,82 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	scroll-behavior: smooth;
+}
+
+body, html {
+	min-height: 100%;
+	width: 100%;
+}
+
+.clear::after, .clear::before {
+	content: " ";
+	display: table;
+}
+
+.clear::after {
+	clear: both;
+}
+
+// Main styles
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+
+body {
+	font: 22px 'Bebas Neue', cursive;
+	color: #111;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.pixel {
+	display: none;
+	transition: all .3s;
+
+	&.active {
+		display: grid;
+
+		> div {
+			animation: swap .5s 1;
+		}
+		
+	}
+}
+
+@keyframes swap {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+
+}
+
+.triggers {
+	@include pos(fixed, $l: 10px, $t: 10px);
+
+	li {
+		cursor: pointer;
+		padding: 5px 15px;
+		border: 1px solid #111;
+		text-align: center;
+		margin-bottom: 5px;
+
+		&.active {
+			background-color: #39e2da;
+		}
+	}
+}

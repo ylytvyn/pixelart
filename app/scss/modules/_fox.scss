@@ -1,0 +1,162 @@
+.fox {
+    @include size(80vh, 67.4vh);
+    //display: grid;
+    grid-template-columns: repeat(38, 1fr);
+    grid-template-rows: repeat(32, 1fr);
+
+    &__box {
+        @include size(100%);
+
+        &--black {
+            background-color: #111;
+        }
+
+        &--orange {
+            background-color: #ff6f00;
+        }
+
+        &--1 {@include grid(7, 11, 1, auto)}
+        &--2 {@include grid(6, auto, 2, 4)}
+        &--3 {@include grid(11, 15, 2, auto)}
+        &--4 {@include grid(7, 9, 2, 4)}
+        &--5 {@include grid(9, 11, 2, auto)}
+        &--6 {@include grid(10, 12, 3, auto)}
+        &--7 {@include grid(7, 9, 4, auto)}
+        &--8 {@include grid(7, auto, 5, 7)}
+        &--9 {@include grid(9, auto, 5, 7)}
+        &--10 {@include grid(8, auto, 7, 9)}
+        &--11 {@include grid(9, auto, 7, 9)}
+        &--12 {@include grid(9, auto, 9, 12)}
+        &--13 {@include grid(10, 13, 7, auto)}
+        &--14 {@include grid(13, 15, 3, auto)}
+        &--15 {@include grid(13, auto, 6, auto)}
+        &--16 {@include grid(15, 18, 3, auto)}
+        &--17 {@include grid(16, auto, 4, auto)}
+        &--18 {@include grid(14, 16, 4, auto)}
+        &--19 {@include grid(17, auto, 4, auto)}
+        &--20 {@include grid(10, 21, 8, 20)}
+        &--21 {@include grid(13, 20, 7, auto)}
+        &--22 {@include grid(14, 18, 6, auto)}
+        &--23 {@include grid(13, auto, 6, auto)}
+        &--24 {@include grid(15, 17, 5, auto)}
+        &--25 {@include grid(17, auto, 5, auto)}
+        &--26 {@include grid(18, 20, 4, auto)}
+        &--27 {@include grid(18, 20, 5, auto)}
+        &--28 {@include grid(20, auto, 5, auto)}
+        &--29 {@include grid(18, 23, 6, auto)}
+        &--30 {@include grid(21, auto, 9, auto)}
+        &--31 {@include grid(21, auto, 10, 13)}
+        &--32 {@include grid(22, auto, 13, 15)}
+        &--33 {@include grid(23, auto, 7, auto)}
+        &--34 {@include grid(24, auto, 8, auto)}
+        &--35 {@include grid(25, auto, 9, 20)}
+        &--36 {@include grid(21, auto, 13, 15)}
+        &--37 {@include grid(21, 23, 15, 20)}
+        &--38 {@include grid(23, auto, 19, auto)}
+        &--39 {@include grid(24, auto, 20, auto)}
+        &--40 {@include grid(23, auto, 21, auto)}
+        &--41 {@include grid(20, auto, 20, auto)}
+        &--42 {@include grid(17, 20, 20, auto)}
+        &--43 {@include grid(16, auto, 21, auto)}
+        &--44 {@include grid(8, auto, 12, 15)}
+        &--45 {@include grid(9, auto, 12, 19)}
+        &--46 {@include grid(8, auto, 15, 18)}
+        &--47 {@include grid(6, 8, 15, auto)}
+        &--48 {@include grid(6, 8, 16, auto)}
+        &--49 {@include grid(6, 8, 17, auto)}
+        &--50 {@include grid(5, auto, 16, auto)}
+        &--51 {@include grid(5, auto, 17, auto)} 
+        &--52 {@include grid(4, auto, 17, auto)}
+        &--53 {@include grid(5, auto, 18, auto)}
+        &--54 {@include grid(4, auto, 18, auto)}
+        &--55 {@include grid(4, auto, 20, 23)}
+        &--56 {@include grid(2, 4, 21, auto)}
+        &--57 {@include grid(3, auto, 18, 20)}
+        &--58 {@include grid(2, auto, 19, 21)}
+        &--59 {@include grid(1, auto, 21,23)}
+        &--60 {@include grid(2, 4, 22, auto)}
+        &--61 {@include grid(8, auto, 18, auto)}
+        &--62 {@include grid(9, auto, 19, auto)}
+        &--63 {@include grid(4, 10, 23, auto)}
+        &--64 {@include grid(10, 12, 22, auto)}
+        &--65 {@include grid(10, 12, 24, auto)}
+        &--66 {@include grid(10, 12, 23, auto)}
+        &--67 {@include grid(9, 16, 20, 22)}
+        &--68 {@include grid(7, 9, 21, auto)}
+        &--69 {@include grid(8, 10, 22, auto)}
+        &--70 {@include grid(16, auto, 20, auto)}
+        &--71 {@include grid(12, 16, 22, auto)}
+        &--72 {@include grid(14, auto, 23, auto)}
+        &--73 {@include grid(26, 29, 12, auto)}
+        &--74 {@include grid(29, auto, 13, 16)}
+        &--75 {@include grid(26, auto, 13, auto)}
+        &--76 {@include grid(27, auto, 13, 15)}
+        &--77 {@include grid(28, auto, 13, 16)}
+        &--78 {@include grid(27, 29, 16, auto)}
+        &--79 {@include grid(26, auto, 17, auto)}
+        &--80 {@include grid(30, auto, 16, 19)}
+        &--81 {@include grid(29, auto, 19, auto)}
+        &--82 {@include grid(28, auto, 20, auto)}
+        &--83 {@include grid(27, auto, 21, auto)}
+        &--84 {@include grid(21, 31, 22, auto)}
+        &--85 {@include grid(29, auto, 16, 19)}
+        &--86 {@include grid(27, 29, 17, 20)}
+        &--87 {@include grid(26, auto, 18, 20)}
+        &--88 {@include grid(25, 28, 20, auto)}
+        &--89 {@include grid(24, 27, 21, auto)}
+        &--90 {@include grid(12, 14, 23, auto)}
+        &--91 {@include grid(13, auto, 24, auto)}
+        &--92 {@include grid(20, auto, 23, auto)}
+        &--93 {@include grid(19, auto, 24, auto)}
+        &--94 {@include grid(14, 19, 25, auto)}
+        &--95 {@include grid(7, 9, 24, auto)}
+        &--96 {@include grid(8, auto, 25, 30)}
+        &--97 {@include grid(18, auto, 26, 28)}
+        &--98 {@include grid(17, auto, 28, auto)}
+        &--99 {@include grid(16, auto, 29, 31)}
+        &--100 {@include grid(15, auto, 31, 33)}
+        &--101 {@include grid(31, 33, 23, auto)}
+        &--102 {@include grid(32, auto, 24, 26)}
+        &--103 {@include grid(31, auto, 26, 28)}
+        &--104 {@include grid(30, auto, 28, 31)}
+        &--105 {@include grid(29, auto, 31, 33)}
+        &--106 {@include grid(28, auto, 33, auto)}
+        &--107 {@include grid(27, auto, 34, auto)}
+        &--108 {@include grid(26, auto, 35, auto)}
+        &--109 {@include grid(25, auto, 36, auto)}
+        &--110 {@include grid(22, 25, 37, auto)}
+        &--111 {@include grid(19, 22, 38, auto)}
+        &--112 {@include grid(15, 19, 37, auto)}
+        &--113 {@include grid(9, auto, 30, 32)}
+        &--114 {@include grid(10, auto, 32, auto)}
+        &--115 {@include grid(11, auto, 33, 35)}
+        &--116 {@include grid(12, auto, 35, auto)}
+        &--117 {@include grid(13, 15, 36, auto)}
+        &--118 {@include grid(10, 16, 26, 31)}
+        &--119 {@include grid(9, auto, 24, 30)}
+        &--120 {@include grid(10, 14, 25, auto)}
+        &--121 {@include grid(12, auto, 24, auto)}
+        &--122 {@include grid(16, auto, 26, 29)}
+        &--123 {@include grid(17, auto, 26, 28)}
+        &--124 {@include grid(12, 15, 31, 35)}
+        &--125 {@include grid(10, 12, 31, auto)}
+        &--126 {@include grid(11, auto, 32, auto)}
+        &--127 {@include grid(15, 25, 33, 37)}
+        &--128 {@include grid(13, 15, 35, auto)}
+        &--129 {@include grid(19, 22, 37, auto)}
+        &--130 {@include grid(19, 22, 25, 33)}
+        &--131 {@include grid(17, 19, 29, 33)}
+        &--132 {@include grid(16, auto, 31, 33)}
+        &--133 {@include grid(18, auto, 28, auto)}
+        &--134 {@include grid(20, auto, 24, auto)}
+        &--135 {@include grid(21, auto, 23, auto)}
+        &--136 {@include grid(22, 24, 24, auto)}
+        &--137 {@include grid(22, auto, 26, auto)}
+        &--138 {@include grid(23, 25, 30, auto)}
+        &--139 {@include grid(22, 24, 31, auto)}
+        &--140 {@include grid(22, 25, 32, auto)}
+        &--141 {@include grid(25, auto, 33, 36)}
+        &--142 {@include grid(26, auto, 33, 35)}
+        &--143 {@include grid(27, auto, 32, 34)}
+    }
+}
